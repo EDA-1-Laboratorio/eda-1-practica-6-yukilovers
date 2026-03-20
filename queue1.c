@@ -44,7 +44,9 @@ void enqueue(data d, queue *q)
 
 data head(const queue *q)
 {
-    _______________________ // <- Completa esta función
+    //_______________________ // <- Completa esta función
+    return q->head->d;
+    
 }
 
 boolean empty(const queue *q)
@@ -54,7 +56,9 @@ boolean empty(const queue *q)
 
 boolean full(const queue *q)
 {
-    _______________________ // <- Completa esta función
+    //_______________________ // <- Completa esta función
+    return ((boolean) (q -> cnt == FULL));
+    
 }
 
 int main(void)
@@ -98,3 +102,10 @@ int main(void)
     }
     return 0;
 }
+
+/*
+La funciòn principal se encarga de 
+Se encarga de imprimir las operaciones solicitadas en orden, por el usuario, en dos colas distintas y
+limitar que el usuario digite los elementos de la cola a y la cola b unicamente.
+Imprime del primer elemento que se introdujo al ùltimo.
+*/
